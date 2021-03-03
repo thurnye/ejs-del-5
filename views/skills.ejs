@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= skill.skill %></h5>
+        <p class="card-text"><small class="text-muted"><%= skill.status %></small></p>
+      </div>
+    </div>
+    </div>
+    <div class="edit">
+      <a href="/skills/edit-skill/<%= skill.id %>">EDIT</a>
+      <form method="POST">
+        <input type='hidden' value="<%= skill.id %>" name="skillId">
+        <button class="btn del" type="submit">Delete</button>
+    </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  text-align: -webkit-center;
+}
+
+h1{
+  color: red;
+}
+.card{
+  margin: 20px;
+  box-shadow: 2px 2px #a39999;
+}
+p{
+  margin: 40px;
+}
+
+a{
+  padding: 10px;
+  font-size: 19px;
+  color: #2b53b1b5;
+  text-decoration: none;
+  font-style: italic;
+}
+.col-md-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add{
+  margin: 150px;
+}
+
+form{
+  padding-top: 150px;
+  max-width: 450px;
+}
+.edit {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit form {
+  padding: 0;
+  max-width: 0;
+}
+.del {
+  padding: 10px;
+  font-size: 19px;
+  color: #2b53b1b5;
+  text-decoration: none;
+  font-style: italic;
+}
